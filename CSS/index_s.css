@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #check {
+    -webkit-appearance: none;
+    display: none;
+  }
+  #searchbox {
+    width: 0px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.3s ease;
+    transform: scale(0);
+  }
+  input[type="search"] {
+    padding: 0 25px;
+  }
+  #searchbox::placeholder {
+    font-style: italic;
+  }
+  span {
+    background: #8D86C9;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s ease;
+    margin-right: 40px;
+  }
+  #check:checked ~ label #searchbox {
+    width: 350px;
+    transform: scale(1);
+    border: 3px solid #fff;
+  }
+  #check:checked ~ label span {
+    color: #000;
+    background: #fff;
+    position: relative;
+    margin-left: 5px;
+  }
+  section {
+    height: 1px;
+    width: 1px;
+    box-shadow: 0 0 0 0 #8D86C9;
+    position: absolute;
+    transition: 0.6s ease;
+    border-radius: 50%;
+  }
+  #check:checked ~ section {
+    box-shadow: 0 0 0 3500px #8D86C9;
+  }
+  label {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  /*This is my youtube channel link*/
+  a {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    right: 20px;
+    color: #000;
+    text-align: right;
+    line-height: 1.5em;
+  }
+  a:hover {
+    color: #403889;
+  }
+  .tab{
+    display: inline-block;
+    width:20px;
+    background:white !important;
+  }
+  
+  
